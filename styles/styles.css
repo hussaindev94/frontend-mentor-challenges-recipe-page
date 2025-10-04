@@ -1,12 +1,47 @@
 /*Define The variables here*/
-:root{}
+:root {
+}
 
 /*HTML Styles*/
-html{
-    font-size: 62.5%; /*This will make the base font size = 10px = 1rem, any px value converte it by 10 will result into rem equvalent value*/
+html {
+  font-size: 62.5%; /*This will make the base font size = 10px = 1rem, any px value converte it by 10 will result into rem equvalent value*/
 }
 
 /*Body Styles*/
-body{
-    font-size: 1.4rem; /*This will = 14px on the base line that we defined upove.*/
+body {
+  font-size: 1.4rem; /*This will = 14px on the base line that we defined upove.*/
+}
+
+/*-----------------Footer Styles--------------------*/
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 1px;
+  left: 0;
+  padding: 5px;
+  margin: 0px;
+
+  .footer-list {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: space-around;
+    gap: 3px;
+
+    li {
+      font-size: 1rem;
+      text-align: center;
+      color: hsl(228, 45%, 44%);
+
+      span {
+        font-weight: bold;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
 }
