@@ -1,4 +1,4 @@
-/*Define The variables here*/
+/*Variables*/
 :root {
   /* fonts variables */
   --outfit-font-family: "outfit", system-ui, -apple-system, BlinkMacSystemFont,
@@ -9,6 +9,19 @@
     "Open Sans", "Helvetica Neue", sans-serif;
 
   /* color variables */
+  --white-color: hsl(0, 0%, 100%);
+  --stone-100-color: hsl(30, 54%, 90%);
+  --stone-150-color: hsl(30, 18%, 87%);
+  --stone-600-color: hsl(30, 10%, 34%);
+  --stone-900-color: hsl(24, 5%, 18%);
+  --brown-800-color: hsl(14, 45%, 36%);
+  --rose-800-color: hsl(332, 51%, 32%);
+  --rose-50-color: hsl(330, 100%, 98%);
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 /*HTML Styles*/
