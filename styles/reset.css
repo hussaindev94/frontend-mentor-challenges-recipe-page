@@ -138,6 +138,7 @@ body {
 ol,
 ul {
   list-style: none;
+  padding: 0;
 } /* classic reset */
 ul[role="list"],
 ol[role="list"] {

@@ -1,13 +1,13 @@
-/* Outfit Regular*/
+/* Outfit 400 700*/
 @font-face {
   font-family: "outfit";
-  src: url("../assets/fonts/outfit/Outfit-VariableFont_wght.ttf") format("ttf");
+  src: url("../assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
   font-weight: 400 700;
   font-style: normal;
   font-display: swap;
 }
 
-/* Young serif 400 700*/
+/* Young serif 700*/
 @font-face {
   font-family: "young serif";
   src: url("../assets/fonts/young-serif/YoungSerif-Regular.ttf");
