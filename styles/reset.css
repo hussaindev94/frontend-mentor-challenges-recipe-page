@@ -197,13 +197,13 @@ h6 {
   overflow-wrap: break-word;
 }
 p {
-  text-wrap: pretty;
+  text-wrap: balance;
 }
 h1,
 h2,
 h3,
 h4 {
-  text-wrap: balance;
+  text-wrap: pretty;
 }
 
 /* Shorter line-height on headings & interactive (from third reset) */
