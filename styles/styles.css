@@ -32,25 +32,56 @@ html {
     background-color: var(--stone-100-color);
     display: grid;
     place-items: center;
+    width: 100vw;
+
+    @media (min-width: 768px) {
+      padding: 12.8rem 4.8rem;
+    }
+    /*---------------- any hr style-----------------------*/
+    hr {
+      color: var(--rose-50-color);
+      opacity: 0.5;
+      width: 100%;
+      height: 0.1rem;
+    }
     /*--------------------Main Styles--------------------*/
     .main {
-      background-color: var(--white-color);
-      /*--------------------Sectio Styles--------------------*/
+      /*--------------------Section Styles--------------------*/
       .card-section {
-        min-width: 37.5rem;
-        max-width: 55rem;
+        margin-bottom: 3rem;
+        width: 37.5rem;
+
+        @media (min-width: 768px) {
+          width: clamp(
+            61.6rem,
+            /* linear interpolation from 768→1200 viewport width */
+              calc(61.6rem + (736 - 616) * ((100vw - 76.8rem) / (1200 - 768))),
+            73.6rem
+          );
+        }
         /*--------------------Card wrpper Styles--------------------*/
         .card-wrapper {
+          background-color: var(--white-color);
           display: flex;
           flex-direction: column;
           align-items: flex-start;
           padding: 0;
+          @media (min-width: 768px) {
+            padding: 4rem;
+            border-radius: 2.4rem;
+          }
           /*--------------------Recipe image Styles--------------------*/
           .recipe-image {
             background: url("../assets/images/image-omelette.jpeg") lightgray
               50% / cover no-repeat;
             align-self: stretch;
             height: 17.1rem;
+
+            @media (min-width: 768px) {
+              border-radius: 2.4rem;
+              margin-bottom: 4rem;
+              height: 30rem;
+            }
           }
           /*--------------------Recipe content Styles--------------------*/
           .recipe-content-container {
@@ -60,6 +91,9 @@ html {
             align-self: stretch;
             gap: 3.2rem;
             padding: 4rem 3.2rem;
+            @media (min-width: 768px) {
+              padding: 0;
+            }
             /*--------------------Recipe title container Styles--------------------*/
             .recipe-title-container {
               display: flex;
@@ -270,7 +304,6 @@ html {
                     &:nth-child(even) {
                       color: var(--brown-800-color);
                       font-weight: 700;
-                      /* text-align: left; */
                     }
                   }
                 }
@@ -281,15 +314,17 @@ html {
       }
     }
   }
-
   /*-----------------Footer Styles--------------------*/
   .footer {
     position: absolute;
-    width: 100%;
     bottom: 0;
     left: 0;
     padding: 5px;
-    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    width: 100%;
 
     .footer-list {
       padding: 0;
@@ -315,10 +350,4 @@ html {
       }
     }
   }
-}
-
-hr {
-  color: var(--rose-50-color);
-  opacity: 0.5;
-  width: 100%;
 }
