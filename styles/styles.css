@@ -23,10 +23,10 @@
 html {
   /*This will make the base font size = 10px = 1rem, any px value converte it by 10 will result into rem equvalent value*/
   font-size: 62.5%;
+  position: relative;
 
   /*--------------------Body Styles--------------------*/
   body {
-    position: relative;
     /*This will = 14px on the base line that we defined upove.*/
     font-size: 1.6rem;
     background-color: var(--stone-100-color);
@@ -316,10 +316,6 @@ html {
   }
   /*-----------------Footer Styles--------------------*/
   .footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -333,18 +329,20 @@ html {
       align-items: center;
       justify-content: center;
       align-content: space-around;
-      gap: 3px;
+      text-align: center;
 
       li {
-        font-size: 1rem;
+        font-size: 1.4rem;
         text-align: center;
         color: hsl(228, 45%, 44%);
 
         span {
           font-weight: bold;
+          color: var(--rose-800-color);
         }
 
         a {
+          color: var(--stone-600-color);
           text-decoration: none;
         }
       }
